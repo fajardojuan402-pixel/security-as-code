@@ -1,8 +1,8 @@
 # Informe individual — Laboratorio Security as Code
 
 ## 1. Datos de entrega
-- **Estudiante:** David (o completar con nombre completo del estudiante)
-- **Repositorio original base:** `https://github.com/AndUm423/security-as-code-lab.git`
+- **Estudiante:** Juan Fajardo (`fajardojuan402-pixel`)
+- **Repositorio:** `https://github.com/fajardojuan402-pixel/security-as-code.git`
 - **Rama de trabajo:** `feature/security-lab`
 - **Fecha de realización:** 24 de noviembre de 2026
 
