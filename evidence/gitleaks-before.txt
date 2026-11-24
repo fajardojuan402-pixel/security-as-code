@@ -1,0 +1,8 @@
+﻿Finding:     ghp_000000000000000000000000000000000000
+Secret:      ghp_000000000000000000000000000000000000
+RuleID:      github-pat
+Entropy:     0.668996
+File:        src/config.py
+Line:        5
+Fingerprint: src/config.py:github-pat:5
+
