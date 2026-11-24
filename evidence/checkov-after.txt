@@ -1,0 +1,79 @@
+﻿
+       _               _
+   ___| |__   ___  ___| | _______   __
+  / __| '_ \ / _ \/ __| |/ / _ \ \ / /
+ | (__| | | |  __/ (__|   < (_) \ V /
+  \___|_| |_|\___|\___|_|\_\___/ \_/
+
+By Prisma Cloud | version: 3.4.10 
+
+terraform scan results:
+
+Passed checks: 18, Failed checks: 0, Skipped checks: 3
+
+Check: CKV_AWS_227: "Ensure KMS key is enabled"
+	PASSED for resource: aws_kms_key.s3_key
+	File: \main.tf:15-34
+Check: CKV_AWS_33: "Ensure KMS key policy does not contain wildcard (*) principal"
+	PASSED for resource: aws_kms_key.s3_key
+	File: \main.tf:15-34
+Check: CKV_AWS_7: "Ensure rotation for customer created CMKs is enabled"
+	PASSED for resource: aws_kms_key.s3_key
+	File: \main.tf:15-34
+Check: CKV_AWS_93: "Ensure S3 bucket policy does not lockout all but root user. (Prevent lockouts needing root account fixes)"
+	PASSED for resource: aws_s3_bucket.lab_data
+	File: \main.tf:36-42
+Check: CKV_AWS_53: "Ensure S3 bucket has block public ACLS enabled"
+	PASSED for resource: aws_s3_bucket_public_access_block.lab_data
+	File: \main.tf:52-58
+Check: CKV_AWS_54: "Ensure S3 bucket has block public policy enabled"
+	PASSED for resource: aws_s3_bucket_public_access_block.lab_data
+	File: \main.tf:52-58
+Check: CKV_AWS_55: "Ensure S3 bucket has ignore public ACLs enabled"
+	PASSED for resource: aws_s3_bucket_public_access_block.lab_data
+	File: \main.tf:52-58
+Check: CKV_AWS_56: "Ensure S3 bucket has 'restrict_public_buckets' enabled"
+	PASSED for resource: aws_s3_bucket_public_access_block.lab_data
+	File: \main.tf:52-58
+Check: CKV_AWS_300: "Ensure S3 lifecycle configuration sets period for aborting failed uploads"
+	PASSED for resource: aws_s3_bucket_lifecycle_configuration.lab_data_lifecycle
+	File: \main.tf:78-91
+Check: CKV2_AWS_65: "Ensure access control lists for S3 buckets are disabled"
+	PASSED for resource: aws_s3_bucket_ownership_controls.lab_data_ownership
+	File: \main.tf:44-50
+Check: CKV2_AWS_64: "Ensure KMS key Policy is defined"
+	PASSED for resource: aws_kms_key.s3_key
+	File: \main.tf:15-34
+Check: CKV2_AWS_61: "Ensure that an S3 bucket has a lifecycle configuration"
+	PASSED for resource: aws_s3_bucket.lab_data
+	File: \main.tf:36-42
+Check: CKV2_AWS_6: "Ensure that S3 bucket has a Public Access block"
+	PASSED for resource: aws_s3_bucket.lab_data
+	File: \main.tf:36-42
+Check: CKV_AWS_19: "Ensure all data stored in the S3 bucket is securely encrypted at rest"
+	PASSED for resource: aws_s3_bucket.lab_data
+	File: \main.tf:36-42
+Check: CKV_AWS_20: "S3 Bucket has an ACL defined which allows public READ access."
+	PASSED for resource: aws_s3_bucket.lab_data
+	File: \main.tf:36-42
+Check: CKV_AWS_21: "Ensure all data stored in the S3 bucket have versioning enabled"
+	PASSED for resource: aws_s3_bucket.lab_data
+	File: \main.tf:36-42
+Check: CKV_AWS_57: "S3 Bucket has an ACL defined which allows public WRITE access."
+	PASSED for resource: aws_s3_bucket.lab_data
+	File: \main.tf:36-42
+Check: CKV_AWS_145: "Ensure that S3 buckets are encrypted with KMS by default"
+	PASSED for resource: aws_s3_bucket.lab_data
+	File: \main.tf:36-42
+Check: CKV2_AWS_62: "Ensure S3 buckets should have event notifications enabled"
+	SKIPPED for resource: aws_s3_bucket.lab_data
+	Suppress comment: Notificaciones de eventos no requeridas en bucket de demostracion
+	File: \main.tf:36-42
+Check: CKV_AWS_18: "Ensure the S3 bucket has access logging enabled"
+	SKIPPED for resource: aws_s3_bucket.lab_data
+	Suppress comment: Access logging requiere bucket destino adicional fuera del alcance
+	File: \main.tf:36-42
+Check: CKV_AWS_144: "Ensure that S3 bucket has cross-region replication enabled"
+	SKIPPED for resource: aws_s3_bucket.lab_data
+	Suppress comment: Replicacion cross-region no requerida en alcance de laboratorio individual
+	File: \main.tf:36-42
