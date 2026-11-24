@@ -4,6 +4,7 @@
 - **Estudiante:** Juan Fajardo (`fajardojuan402-pixel`)
 - **Repositorio:** `https://github.com/fajardojuan402-pixel/security-as-code.git`
 - **Rama de trabajo:** `feature/security-lab`
+- **Pull Request:** `https://github.com/fajardojuan402-pixel/security-as-code/pull/1`
 - **Fecha de realización:** 24 de noviembre de 2026
 
 ---
