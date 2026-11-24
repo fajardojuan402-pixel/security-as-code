@@ -1,2 +1,4 @@
-# Dependencia actualizada a versión segura sin vulnerabilidades HIGH ni CRITICAL.
+# Dependencias actualizadas a versiones seguras sin vulnerabilidades HIGH ni CRITICAL.
 urllib3==2.8.0
+wheel>=0.46.2
+jaraco.context>=6.1.0
