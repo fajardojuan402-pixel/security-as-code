@@ -1,0 +1,15 @@
+﻿gitleaks.exe : 
+En línea: 1 Carácter: 208
++ ... } catch {}; & .\.tools\gitleaks.exe dir src -v --no-color 2>&1 | Out- ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    ○
+    │╲
+    │ ○
+    ○ ░
+    ░    gitleaks
+
+4:34PM INF scanned ~1071 bytes (1.07 KB) in 9.86ms
+4:34PM INF no leaks found

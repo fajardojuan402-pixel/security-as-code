@@ -1,2 +1,4 @@
-# Dependencia antigua intencional para el ejercicio de Trivy.
-urllib3==1.25.3
+# Dependencias actualizadas a versiones seguras sin vulnerabilidades HIGH ni CRITICAL.
+urllib3==2.8.0
+wheel>=0.46.2
+jaraco.context>=6.1.0
